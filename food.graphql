@@ -5,6 +5,11 @@ type Query {
 type Food {
   id: ID!
   name: FoodName!
+  serial: String!
+  planet: Planet!
+  sweet: Int!
+  next: ID
+  prev: ID
 }
 
 enum FoodName {
@@ -15,3 +20,36 @@ enum FoodName {
   TEA
   WATER
 }
+
+enum Planet {
+  MERCURY
+  EARTH
+  MARS
+  JUPITER
+  SATURN
+  LUNA
+}
+
+# input FoodName {
+#   name: String!
+# }
+#
+# input CreateInput {
+#   name: FoodName!
+#   serial: String!
+#   planet: Planet
+#   sweet: Int!
+# }
+#
+# input UpdateInput {
+#   name: FoodName!
+#   serial: String!
+#   planet: Planet
+#   sweet: Int!
+# }
+#
+# input NextInput {
+#   prev: ID!
+#   planet: Planet
+#   sweet: Int!
+# }

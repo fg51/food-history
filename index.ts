@@ -1,8 +1,7 @@
 import {GraphQLServer } from 'graphql-yoga';
 
 const food_store =  [
-  // {id: '1', name: 'APPLE', serial: '100', planet: 'EARTH', sweet: 10},
-  {id: '1', name: 'APPLE'},
+  {id: '1', name: 'APPLE', serial: '100', planet: 'EARTH', sweet: 10},
 ];
 
 const resolvers = <any> {
