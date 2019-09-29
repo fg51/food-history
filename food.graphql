@@ -1,0 +1,17 @@
+type Query {
+  allFoods: [Food]!
+}
+
+type Food {
+  id: ID!
+  name: FoodName!
+}
+
+enum FoodName {
+  APPLE
+  BANANA
+  CHESSE
+  COKE
+  TEA
+  WATER
+}
