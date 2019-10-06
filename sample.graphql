@@ -12,7 +12,7 @@ type Post {
 }
 
 type Query {
-  posts: [Posts]
+  posts: [Post]
 }
 
 schema {

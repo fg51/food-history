@@ -1,0 +1,22 @@
+overwrite: true
+schema: 
+  - ./sample.graphql
+documents: null
+  # - ./graphql/queries/*.graphql
+generates:
+  ./server/gen/graphql-resolver-types.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
+  # ./client/gen/graphql-client-api.txs:
+  #   plugins:
+  #     - typescript
+  #     - typescript-operations
+  #     - typescript-react-apollo
+  #   config:
+  #     withComponent: false
+  #     withHooks: true
+  #     withHOC: false
+  ./graphql.schema.json:
+    plugins:
+      - introspection
