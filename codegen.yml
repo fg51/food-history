@@ -1,8 +1,9 @@
 overwrite: true
 schema:
-  - ./sample.graphql
-documents: null
-  # - ./graphql/queries/*.graphql
+  - ./graphql/schema.graphql
+documents:
+  - ./graphql/*.graphql
+  - ./graphql/*/*.graphql
 generates:
   ./server/gen/graphql-resolver-types.ts:
     plugins:
